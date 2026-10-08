@@ -1,0 +1,40 @@
+# Throwaway stall test for ComplyEaze/bridge#1426, on a fork branch only. It checks out the pull
+# request's commit from upstream and runs the install line that commit puts in ci.yml against a
+# local server that drips one byte every 5 s. It runs nothing else and uses no secret.
+name: Stall test for bridge#1426
+on:
+  push:
+    branches: [stall-test-1426]
+permissions:
+  contents: read
+jobs:
+  stall:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          path: harness-checkout
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: ComplyEaze/bridge
+          ref: 6a3dcabead8afa4ce791c80aa9b7d5037501450f
+          path: bridge
+          persist-credentials: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          package_json_file: bridge/package.json
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v6
+        with:
+          node-version-file: bridge/.node-version
+      - run: corepack pnpm install --frozen-lockfile
+        working-directory: bridge
+      - name: Stall test
+        working-directory: bridge
+        run: bash ../harness-checkout/harness/stall.sh "$RUNNER_TEMP/stall-logs" ../harness-checkout/harness/drip.py
+      - if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: stall-logs
+          path: ${{ runner.temp }}/stall-logs
