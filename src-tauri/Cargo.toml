@@ -108,7 +108,7 @@ chrono = { version = "0.4", features = ["serde"] }
 getrandom = "0.4"
 icu_properties = "2.3"
 keyring = { version = "4.1.4", default-features = false, features = ["v1"] }
-quick-xml = { version = "0.41", features = ["serialize"] }
+quick-xml = { version = "0.42", features = ["serialize"] }
 # Bridge supports Windows and macOS; rfd's defaults add Linux portal/Wayland code.
 rfd = { version = "0.17", default-features = false }
 rust_xlsxwriter = { version = "0.99.0", default-features = false }
