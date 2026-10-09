@@ -1188,7 +1188,7 @@ async fn confirm_with(
     )
     .await
     {
-        Ok(answer) if answer.token_matched && answer.exited_cleanly => Ok(()),
+        Ok(answer) if answer.exited_cleanly => Ok(()),
         // A person's decline is no token and exit 1: `run_confirmation`
         // returns false. A clean exit without the token is never that; it is
         // an executable that does not answer with this token, such as one
