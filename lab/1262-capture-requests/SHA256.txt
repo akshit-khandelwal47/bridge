@@ -1,0 +1,4 @@
+84e0077082c560416a132f956b288fe0e845f5e5ba4ee4cd36bca63779f139d0  q1-ledger-catalogue-v1.xml  (1974 bytes, collection id: List of Ledgers)
+d49ec3389892e87bd1ac41cb91f5feecb1ccab7b7325fc66f9d5c043fe065ee8  q2-vouchers-day.xml  (1740 bytes, collection id: Bridge Agent Vouchers)
+f09848fb2e1bc5814341b2795fc95e9c10f16e516b172d00806d0a127db0e6cd  q3-movement-vouchers-day.xml  (1760 bytes, collection id: Bridge Agent Vouchers)
+5f4575020f3f30920403201813e5033e725671bbdfeb37cca17629b74a18298c  q4-movement-ledgers.xml  (1152 bytes, collection id: List of Ledgers)
