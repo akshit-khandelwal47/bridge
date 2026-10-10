@@ -1,0 +1,4 @@
+ec5f0fa02de3c9e577a21c4aefd3d2991b7f780002038075a14d7257dcc5d71d  q1-rates-four-parents.xml  (2306 bytes)
+4380182a0a6f20fb3a429ab0f25f188b0fbae36b163f471d67cb1e375b2d9e04  q2-rates-one-parent-case-changed.xml  (2112 bytes)
+2e728e002305cbaa33c73bd36507ca8d6ab62c5dea5497b02204a07636385d88  q0-rates-whole.xml  (1876 bytes)
+28a47c26a29fa799856c112b71e19076946d4c0f85a6dcc65f5cdafe0e1e1bd0  q3-ledger-catalogue-v2.xml  (2106 bytes)
