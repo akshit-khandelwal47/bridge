@@ -1,0 +1,11 @@
+# Measured on TallyPrime 7.1 Silver (licensed), Windows 10 22H2, synthetic company BRIDGE PILOT LAB, 10 Oct 2026. One send per request, as reported on #1331 by the Lab thread; answers copied back byte for byte (hashes equal the laptop's).
+# sha256  file  (bytes; request = request file and its SHA-256 at fork commit 5876c342d5e02a857cdfb00b2834e01d503f3c1a; curl exit 0, HTTP 200, seconds)
+23a0f525257dbfe50b68fb4aafca9ab4f72b7e09e72c67cdc2808f0cf65109bb  a-q1-rates-four-parents.xml  (44418 bytes; request q1-rates-four-parents.xml ec5f0fa02de3c9e577a21c4aefd3d2991b7f780002038075a14d7257dcc5d71d; curl exit 0, HTTP 200, 0.012329 s)
+2f884c9fa818b8fb559140c029672f1d966deea2e81faa2a74d7d491d8824d06  a-q2-rates-one-parent-case-changed.xml  (24596 bytes; request q2-rates-one-parent-case-changed.xml 4380182a0a6f20fb3a429ab0f25f188b0fbae36b163f471d67cb1e375b2d9e04; curl exit 0, HTTP 200, 0.009461 s)
+c6d174f7a55b285877f4294e6b62c3fbe4aaa3f152d94779e60e2cdacef45d42  a-q3-ledger-catalogue-v2.xml  (21352 bytes; request q3-ledger-catalogue-v2.xml 28a47c26a29fa799856c112b71e19076946d4c0f85a6dcc65f5cdafe0e1e1bd0; curl exit 0, HTTP 200, 0.008285 s)
+3042acae14a33ebd0c69b1850451e524a4ab295be2b54486f3b10e035fd6d2cc  a-q0-rates-whole.xml  (56838 bytes; request q0-rates-whole.xml 2e728e002305cbaa33c73bd36507ca8d6ab62c5dea5497b02204a07636385d88; curl exit 0, HTTP 200, 0.011091 s)
+2cc8c72d9ad919f7c30f648b7c3364773cf13fe10ec706a0ad235ffaab168500  a1331-marks-check.xml  (3394 bytes; marks read taken by the Lab thread before the sends to confirm the company by GUID; its request is not in this folder)
+72aac89ac3a2fb110c24603162fb898b86ca7ac86efc7aac9ca442f80573b682  a-q1-rates-four-parents.xml.headers.txt  (135 bytes)
+29a8f92a5b77d1cc2d2e914272c304e67980fb91445f9a7544d87d11e3f77554  a-q2-rates-one-parent-case-changed.xml.headers.txt  (135 bytes)
+267a7b13355734a32e55ed56c10f1c77e4b16f5f91d33bf937274dc998ea5dfa  a-q3-ledger-catalogue-v2.xml.headers.txt  (135 bytes)
+4aa0cbcb384b46af6332dac199957f1bc7f834bb87401397279871ddefadff52  a-q0-rates-whole.xml.headers.txt  (135 bytes)
